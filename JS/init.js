@@ -1,6 +1,6 @@
-// // js/init.js
-// import { initFormEventListeners } from './formHandlers.js';
+// js/init.js
+import { initFormEventListeners } from './formHandlers.js';
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     initFormEventListeners();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    initFormEventListeners();
+});
