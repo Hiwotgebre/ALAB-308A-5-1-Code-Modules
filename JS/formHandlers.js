@@ -6,16 +6,26 @@ function handleContactFormSubmit(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-    console.log('Contact Form Submission:', {name, email, message});
-    // Ideally, here you'd make a POST request to a server
+    
+    // Displaying the output on the webpage
+    document.getElementById('form-output').innerHTML = `
+        <h3>Contact Form Submission:</h3>
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Message: ${message}</p>
+    `;
 }
 
 // Function to handle the newsletter form submission
 function handleNewsletterFormSubmit(event) {
     event.preventDefault();  // Prevent the default form submission behavior
     const email = document.querySelector('.newsletter-form input[type=email]').value;
-    console.log('Newsletter Subscription:', {email});
-    // And here, you might add this email to a mailing list database
+    
+    // Appending to the existing output
+    document.getElementById('form-output').innerHTML += `
+        <h3>Newsletter Subscription:</h3>
+        <p>Email: ${email}</p>
+    `;
 }
 
 export function initFormEventListeners() {
