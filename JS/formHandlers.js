@@ -16,7 +16,8 @@ function handleContactFormSubmit(event) {
     `;
 }
 
-// Function to handle the newsletter form submission
+//Function to handle the newsletter form submission
+
 function handleNewsletterFormSubmit(event) {
     event.preventDefault();  // Prevent the default form submission behavior
     const email = document.querySelector('.newsletter-form input[type=email]').value;
