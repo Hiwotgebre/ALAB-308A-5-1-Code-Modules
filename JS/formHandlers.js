@@ -14,6 +14,9 @@ function handleContactFormSubmit(event) {
         <p>Email: ${email}</p>
         <p>Message: ${message}</p>
     `;
+
+    // Reset the form after submission
+    document.querySelector('.contact-form').reset();
 }
 
 //Function to handle the newsletter form submission
@@ -27,6 +30,9 @@ function handleNewsletterFormSubmit(event) {
         <h3>Newsletter Subscription:</h3>
         <p>Email: ${email}</p>
     `;
+
+    // Reset the form after submission
+    document.querySelector('.newsletter-form').reset();
 }
 
 export function initFormEventListeners() {
